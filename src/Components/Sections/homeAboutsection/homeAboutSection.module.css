@@ -1,0 +1,93 @@
+.main {
+  padding-block: 70px;
+  padding-inline: 10px;
+  background-image: url(../../../Assets/Images/texture.jfif);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  position: relative;
+}
+.imageMain {
+  width: 100%;
+  position: absolute;
+}
+.image {
+  position: absolute;
+  height: 500px;
+  width: 400px;
+  overflow: hidden;
+  border-radius: var(--global-border-radius);
+  top: -35%;
+  right: 10%;
+}
+.image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.541);
+  z-index: 3;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%);
+  object-fit: cover;
+}
+.content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.content :where(h1, h5, p) {
+  margin: 0;
+  color: var(--secondary-color);
+  font-family: var(--ff-secondary-regular);
+}
+.content h1 {
+  font-size: 35px;
+  line-height: 1.2;
+}
+.content h5 {
+  font-size: 18px;
+}
+.content p {
+  font-size: 14px;
+}
+@media screen and (max-width: 768px) {
+  .content {
+    text-align: center;
+  }
+  .button {
+    align-self: center;
+  }
+  .content h1 {
+    font-size: 40px;
+  }
+  .content h5 {
+    font-size: 18px;
+  }
+  .content p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .content {
+    text-align: center;
+  }
+  .content h1 {
+    font-size: 30px;
+  }
+  .content h5 {
+    font-size: 16px;
+  }
+  .content p {
+    font-size: 12px;
+  }
+}
