@@ -60,6 +60,15 @@
 .content p {
   font-size: 14px;
 }
+@media screen and (max-width: 991px) {
+  .image {
+    position: relative;
+    top: unset;
+    right: unset;
+    margin-top: 70px;
+    margin-inline: auto;
+  }
+}
 @media screen and (max-width: 768px) {
   .content {
     text-align: center;

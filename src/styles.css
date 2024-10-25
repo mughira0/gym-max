@@ -1,10 +1,10 @@
 :root {
   --main-color: rgb(255, 179, 39); /* Dark Cerulean */
   --secondary-color: #1d1e20; /* Space Cadet */
-  --heading-color: #00416a; /* Indigo Dye */
+  --heading-color: white; /* Indigo Dye */
   --white-color: white; /* Light Grayish for text */
   --black-color: black; /* Midnight Blue */
-  --text-color: #b0c4de; /* Light Steel Blue */
+  --text-color: white; /* Light Steel Blue */
   --light-gray: #36454f; /* Charcoal Blue */
   --background: #001f54; /* Deep Blue */
 

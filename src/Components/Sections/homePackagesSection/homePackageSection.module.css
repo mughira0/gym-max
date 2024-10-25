@@ -1,0 +1,60 @@
+.main {
+  padding-block: 80px;
+  background-image: url(../../../Assets//Images/texture.jpg);
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+  justify-content: flex-start;
+
+  max-width: 800px;
+  gap: 20px;
+  padding-block-end: 40px;
+}
+.content :where(h1, h5, p) {
+  margin: 0;
+  color: var(--white-color);
+  font-family: var(--ff-secondary-regular);
+}
+.content h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.content h5 {
+  color: var(--main-color);
+  text-transform: uppercase;
+  font-size: 22px;
+}
+@media screen and (max-width: 768px) {
+  .content {
+    text-align: center;
+  }
+  .button {
+    align-self: center;
+  }
+  .content h1 {
+    font-size: 40px;
+  }
+  .content h5 {
+    font-size: 18px;
+  }
+  .content p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .content {
+    text-align: center;
+  }
+  .content h1 {
+    font-size: 30px;
+  }
+  .content h5 {
+    font-size: 16px;
+  }
+  .content p {
+    font-size: 12px;
+  }
+}
