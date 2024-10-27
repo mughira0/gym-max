@@ -3,7 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import bodyBuilderImage from "../../../Assets/Images/bodybuilder.jpg";
 import Button from "../../Core/Button";
 import classes from "./homeAboutSection.module.css";
-function HomeAboutSection() {
+function HomeAboutSection({ image = bodyBuilderImage }) {
   return (
     <div className={classes.main}>
       <Container>
@@ -30,7 +30,7 @@ function HomeAboutSection() {
 
           <Col lg={6} md={12}>
             <div className={classes.image}>
-              <img src={bodyBuilderImage} />
+              <img src={image} />
             </div>
           </Col>
         </Row>

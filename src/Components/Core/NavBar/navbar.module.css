@@ -1,0 +1,73 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  justify-content: space-between;
+  z-index: 1000;
+  width: 100%;
+  padding: 1rem 2rem;
+  top: 0;
+  transition: background-color 0.3s ease;
+  background-color: #333;
+  color: #fff;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navLinks li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navLinks li a:hover {
+  color: #f0a500;
+}
+
+/* Hide the menu on small screens */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .navLinks {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    flex-direction: column;
+    background-color: #333;
+    width: 100%;
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+  }
+
+  .showMenu {
+    height: 150px; /* Adjust height based on content */
+  }
+
+  .hamburger {
+    display: block;
+  }
+}

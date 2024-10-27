@@ -1,16 +1,25 @@
 /* #3e3e3ed */
 .main {
+  background-image: url(../../../Assets/Images/texture.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+}
+.main > div {
+  width: 100%;
+  height: 100%;
   padding-block: 80px;
-
-  /* background-color:#3e3e3ed; */
-  background-color: rgb(46, 46, 46);
+  position: relative;
+  padding-inline: 10px;
+  backdrop-filter: blur(5px);
 }
 .content {
   display: flex;
   flex-direction: column;
   align-self: start;
   justify-content: flex-start;
-
+  position: relative;
+  z-index: 2;
   max-width: 800px;
   gap: 20px;
   padding-block-end: 40px;

@@ -5,7 +5,7 @@
   color: var(--white-color);
   text-decoration: none;
   position: relative;
-  font-family: var(--ff-primary-reg);
+  font-family: var(--ff-secondary-regular);
   display: flex; /* Use flexbox to handle icon alignment */
   justify-content: space-around; /* Center content horizontally */
   align-items: center; /* Center content vertically */

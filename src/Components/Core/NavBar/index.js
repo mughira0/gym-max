@@ -1,23 +1,34 @@
-import React, { useEffect, useState } from "react";
-import DesktopNavbar from "./DesktopNavbar/DesktopNavbar";
-import MobileNavbar from "./MobileNavbar/MobileNavbar";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import classes from "./navbar.module.css";
 
-const Header = () => {
-  const [windowSize, setWindowSize] = useState(window.innerWidth);
-  let Login = true;
+function NavBar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  useEffect(() => {
-    const handleWindowResize = () => {
-      setWindowSize(window.innerWidth);
-    };
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
-    window.addEventListener("resize", handleWindowResize);
+  return (
+    <nav className={classes.navbar}>
+      <div className={classes.logo}>GYM LAG</div>
+      <ul
+        className={`${classes.navLinks} ${isMenuOpen ? classes.showMenu : ""}`}
+      >
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/about">About Us</Link>
+        </li>
+      </ul>
+      <div className={classes.hamburger} onClick={toggleMenu}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  );
+}
 
-    return () => {
-      window.removeEventListener("resize", handleWindowResize);
-    };
-  }, []);
-  return <>{windowSize > 991 ? <DesktopNavbar /> : <MobileNavbar />}</>;
-};
-
-export default Header;
+export default NavBar;

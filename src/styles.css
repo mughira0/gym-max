@@ -52,57 +52,59 @@ body h1 {
   font-weight: 500;
   font-family: "bold";
   color: var(--heading-color);
+  font-family: var(--ff-secondary-regular);
 }
 body h2 {
   font-size: 50px;
   font-weight: 500;
   color: var(--heading-color);
-  font-family: var(--ff-primary-bold);
+  font-family: var(--ff-secondary-regular);
 }
 body h3 {
   font-size: 42px;
   color: var(--heading-color);
   font-weight: 500;
-  color: var(--ff-primary-bold);
+  font-family: var(--ff-secondary-regular);
 }
 body h4 {
   font-size: 30px;
   font-weight: 500;
-  color: var(--ff-primary-semiBold);
+  font-family: var(--ff-secondary-regular);
 }
 body h5 {
   font-size: 27px;
   font-weight: 500;
   color: var(--heading-color);
-  color: var(--ff-primary-medium);
+  font-family: var(--ff-secondary-regular);
 }
 body h6 {
   font-size: 22px;
   font-weight: 500;
   color: var(--heading-color);
-  color: var(--ff-primary-regular);
+  font-family: var(--ff-secondary-regular);
 }
 
 body p {
   font-size: 14px;
-  color: var(--text-color);
-  color: var(--ff-primary-regular);
+  color: var(--heading-color);
+  font-family: var(--ff-secondary-regular);
 }
 .p-17 {
   font-size: 17px;
-  color: var(--ff-primary-regular);
+  font-family: var(--ff-secondary-regular);
 
-  color: var(--text-color);
+  color: var(--heading-color);
 }
 .p-16 {
   font-size: 16px;
-  color: var(--ff-primary-regular);
+  font-family: var(--ff-secondary-regular);
 
-  color: var(--text-color);
+  color: var(--heading-color);
 }
 a {
+  color: var(--heading-color);
   text-decoration: none !important;
-  color: var(--ff-primary-regular);
+  font-family: var(--ff-secondary-regular);
 }
 
 .custom_container {
