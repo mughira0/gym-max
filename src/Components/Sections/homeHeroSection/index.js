@@ -13,16 +13,15 @@ function HomeHeroSection({ item }) {
             {item?.description ||
               "Our platform offers one-on-one tutoring for your body and mind. Let's make learning easier together."}
           </p>
-          {!item && (
-            <div className={classes.button}>
-              {" "}
-              <Button
-                label="Get Started"
-                className={classes.button}
-                onClick={() => {}}
-              />
-            </div>
-          )}
+
+          <div className={classes.button}>
+            {" "}
+            <Button
+              label="Get Started"
+              className={classes.button}
+              onClick={() => {}}
+            />
+          </div>
         </div>
       </Container>
     </div>

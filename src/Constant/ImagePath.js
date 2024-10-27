@@ -1,6 +1,7 @@
 export { default as bodybuilder1 } from "../Assets/Images/1.jfif";
 export { default as bodybuilder2 } from "../Assets/Images/2.jfif";
 export { default as bodybuilde3 } from "../Assets/Images/3.jfif";
+export { default as aboutHeroBack } from "../Assets/Images/aboutHeroBack.avif";
 export { default as abouthero } from "../Assets/Images/abouthero.jfif";
 export { default as heroImage } from "../Assets/Images/herobackground.jpg";
 export { default as logo } from "../Assets/Images/logo.png";

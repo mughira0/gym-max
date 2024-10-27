@@ -6,11 +6,11 @@ import HomeAboutSection from "../../Components/Sections/homeAboutsection";
 import HomeCardSection from "../../Components/Sections/homeCardSection";
 import HomeHeroSection from "../../Components/Sections/homeHeroSection";
 import {
+  aboutHeroBack,
   abouthero,
   bodybuilde3,
   bodybuilder1,
   bodybuilder2,
-  heroImage,
 } from "../../Constant/ImagePath";
 import classes from "./about.module.css";
 function About() {
@@ -18,7 +18,7 @@ function About() {
     <>
       <main className={classes.main}>
         <div className={classes.background}>
-          <img src={heroImage} />
+          <img src={aboutHeroBack} />
         </div>
         <NavBar />
         <HomeHeroSection
