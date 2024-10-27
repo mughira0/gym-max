@@ -5,13 +5,7 @@ import ScrollToTopButton from "../../Components/Core/ScrollToTop";
 import HomeAboutSection from "../../Components/Sections/homeAboutsection";
 import HomeCardSection from "../../Components/Sections/homeCardSection";
 import HomeHeroSection from "../../Components/Sections/homeHeroSection";
-import {
-  aboutHeroBack,
-  abouthero,
-  bodybuilde3,
-  bodybuilder1,
-  bodybuilder2,
-} from "../../Constant/ImagePath";
+import { aboutBodybuilder, aboutHeroBack } from "../../Constant/ImagePath";
 import classes from "./about.module.css";
 function About() {
   return (
@@ -29,8 +23,8 @@ function About() {
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
           }}
         />
-        <HomeAboutSection image={abouthero} />
-        <HomeCardSection item={defaultArray} />
+        <HomeAboutSection image={aboutBodybuilder} />
+        <HomeCardSection />
         <Footer />
         <ScrollToTopButton />
       </main>
@@ -39,28 +33,3 @@ function About() {
 }
 
 export default About;
-const defaultArray = {
-  id: 1,
-  title: "Our Trainers",
-  subtitle: "Meet the dedicated fitness experts",
-  influencers: [
-    {
-      id: 1,
-      title: "Emily Doe",
-      image: bodybuilder1,
-      position: "Trainer",
-    },
-    {
-      id: 2,
-      title: "John Doe",
-      image: bodybuilde3,
-      position: "Trainer",
-    },
-    {
-      id: 3,
-      title: "Jane Doe",
-      image: bodybuilder2,
-      position: "Trainer",
-    },
-  ],
-};

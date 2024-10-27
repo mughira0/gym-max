@@ -1,11 +1,12 @@
 export { default as bodybuilder1 } from "../Assets/Images/1.jfif";
 export { default as bodybuilder2 } from "../Assets/Images/2.jfif";
 export { default as bodybuilde3 } from "../Assets/Images/3.jfif";
+export { default as aboutBodybuilder } from "../Assets/Images/aboutBodybuilder.avif";
 export { default as aboutHeroBack } from "../Assets/Images/aboutHeroBack.avif";
 export { default as abouthero } from "../Assets/Images/abouthero.jfif";
 export { default as heroImage } from "../Assets/Images/herobackground.jpg";
+export { default as influencer1 } from "../Assets/Images/influencer1.avif";
+export { default as influencer2 } from "../Assets/Images/influencer2.avif";
+export { default as influencer3 } from "../Assets/Images/inlfuencer3.avif";
 export { default as logo } from "../Assets/Images/logo.png";
 export { default as userAvatar } from "../Assets/Images/profile.jpg";
-export { default as influencer1 } from "../Assets/Images/trainer1.jfif";
-export { default as influencer2 } from "../Assets/Images/trainer2.jfif";
-export { default as influencer3 } from "../Assets/Images/trainer3.jfif";
